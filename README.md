@@ -44,34 +44,34 @@ $ echo "create BaseModel" | ./console.py
 
 ## Stracture
 ```
-AirBnB_clone/
-├── AUTHORS
-├── README.md
-├── console.py
-├── models/
-│   ├── __init__.py
-│   ├── base_model.py
-│   ├── user.py
-│   ├── state.py
-│   ├── city.py
-│   ├── amenity.py
-│   ├── place.py
-│   ├── review.py
-│   └── engine/
-│       ├── __init__.py
-│       └── file_storage.py
-└── tests/
-    ├── __init__.py
-    ├── test_models/
-    │   ├── __init__.py
-    │   ├── test_base_model.py
-    │   ├── test_user.py
-    │   ├── test_state.py
-    │   ├── test_city.py
-    │   ├── test_amenity.py
-    │   ├── test_place.py
-    │   └── test_review.py
-    └── test_engine/
-        ├── __init__.py
-        └── test_file_storage.py
+AirBnB_clone/                   # Root directory of the project
+├── AUTHORS                     # Task 0: Contains the list of contributors
+├── README.md                   # Task 0: Provides a description of the project
+├── console.py                  # Tasks 6, 7, 10: The command interpreter
+├── models/                     # Directory for all model files
+│   ├── __init__.py             # Tasks 5, 6: Initializes the models package
+│   ├── base_model.py           # Tasks 3, 4, 5: Defines the BaseModel class
+│   ├── user.py                 # Task 8: Defines the User class
+│   ├── state.py                # Task 9: Defines the State class
+│   ├── city.py                 # Task 9: Defines the City class
+│   ├── amenity.py              # Task 9: Defines the Amenity class
+│   ├── place.py                # Task 9: Defines the Place class
+│   ├── review.py               # Task 9: Defines the Review class
+│   └── engine/                 # Directory for storage engine
+│       ├── __init__.py         # Task 5: Initializes the engine package
+│       └── file_storage.py     # Task 5: Implements the FileStorage class
+└── tests/                      # Directory for all test files
+    ├── __init__.py             # Task 2: Initializes the tests package
+    ├── test_models/            # Tests for model classes
+    │   ├── __init__.py         # Task 2: Initializes test_models package
+    │   ├── test_base_model.py  # Task 2: Unit tests for BaseModel
+    │   ├── test_user.py        # Task 2: Unit tests for User
+    │   ├── test_state.py       # Task 2: Unit tests for State
+    │   ├── test_city.py        # Task 2: Unit tests for City
+    │   ├── test_amenity.py     # Task 2: Unit tests for Amenity
+    │   ├── test_place.py       # Task 2: Unit tests for Place
+    │   └── test_review.py      # Task 2: Unit tests for Review
+    └── test_engine/            # Tests for storage engine
+        ├── __init__.py         # Task 2: Initializes test_engine package
+        └── test_file_storage.py# Task 2: Unit tests for FileStorage
 ```
