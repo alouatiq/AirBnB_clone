@@ -48,6 +48,11 @@ AirBnB_clone/                   # Root directory of the project
 ├── AUTHORS                     # Task 0: Contains the list of contributors
 ├── README.md                   # Task 0: Provides a description of the project
 ├── console.py                  # Tasks 6, 7, 10: The command interpreter
+│                               # Advanced Tasks 11, 12, 13, 14, 15, 16: 
+│                               # Update to include <class name>.all(), 
+│                               # <class name>.count(), <class name>.show(<id>),
+│                               # <class name>.destroy(<id>), <class name>.update(<id>, <attribute>, <value>),
+│                               # and <class name>.update(<id>, <dictionary>)
 ├── models/                     # Directory for all model files
 │   ├── __init__.py             # Tasks 5, 6: Initializes the models package
 │   ├── base_model.py           # Tasks 3, 4, 5: Defines the BaseModel class
@@ -60,6 +65,7 @@ AirBnB_clone/                   # Root directory of the project
 │   └── engine/                 # Directory for storage engine
 │       ├── __init__.py         # Task 5: Initializes the engine package
 │       └── file_storage.py     # Task 5: Implements the FileStorage class
+│                               # Used by console.py for storage operations
 └── tests/                      # Directory for all test files
     ├── __init__.py             # Task 2: Initializes the tests package
     ├── test_models/            # Tests for model classes
@@ -71,7 +77,10 @@ AirBnB_clone/                   # Root directory of the project
     │   ├── test_amenity.py     # Task 2: Unit tests for Amenity
     │   ├── test_place.py       # Task 2: Unit tests for Place
     │   └── test_review.py      # Task 2: Unit tests for Review
-    └── test_engine/            # Tests for storage engine
-        ├── __init__.py         # Task 2: Initializes test_engine package
-        └── test_file_storage.py# Task 2: Unit tests for FileStorage
+    ├── test_engine/            # Tests for storage engine
+    │   ├── __init__.py         # Task 2: Initializes test_engine package
+    │   └── test_file_storage.py# Task 2: Unit tests for FileStorage
+    └── test_console.py         # Advanced Task 17: Unit tests for console.py
+                                # Covers all basic and advanced console commands
+
 ```
