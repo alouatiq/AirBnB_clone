@@ -47,14 +47,10 @@ $ echo "create BaseModel" | ./console.py
 AirBnB_clone/                   # Root directory of the project
 ├── AUTHORS                     # Task 0: Contains the list of contributors
 ├── README.md                   # Task 0: Provides a description of the project
-├── console.py                  # Tasks 6, 7, 10: The command interpreter
-│                               # Advanced Tasks 11, 12, 13, 14, 15, 16: 
-│                               # Update to include <class name>.all(), 
-│                               # <class name>.count(), <class name>.show(<id>),
-│                               # <class name>.destroy(<id>), <class name>.update(<id>, <attribute>, <value>),
-│                               # and <class name>.update(<id>, <dictionary>)
+├── console.py                  # Task 6, 7, 10-16: Command interpreter with updates for advanced commands
+├── Makefile                    # Contains commands for running tests, lint checks, and the console
 ├── models/                     # Directory for all model files
-│   ├── __init__.py             # Tasks 5, 6: Initializes the models package
+│   ├── __init__.py             # Task 5: Initializes the models package
 │   ├── base_model.py           # Tasks 3, 4, 5: Defines the BaseModel class
 │   ├── user.py                 # Task 8: Defines the User class
 │   ├── state.py                # Task 9: Defines the State class
@@ -64,10 +60,10 @@ AirBnB_clone/                   # Root directory of the project
 │   ├── review.py               # Task 9: Defines the Review class
 │   └── engine/                 # Directory for storage engine
 │       ├── __init__.py         # Task 5: Initializes the engine package
-│       └── file_storage.py     # Task 5: Implements the FileStorage class
-│                               # Used by console.py for storage operations
+│       └── file_storage.py     # Task 5, advanced tasks: Implements the FileStorage class with reload and save
 └── tests/                      # Directory for all test files
     ├── __init__.py             # Task 2: Initializes the tests package
+    ├── test_console.py         # Task 17: Unit tests for console commands (including advanced features)
     ├── test_models/            # Tests for model classes
     │   ├── __init__.py         # Task 2: Initializes test_models package
     │   ├── test_base_model.py  # Task 2: Unit tests for BaseModel
@@ -77,10 +73,7 @@ AirBnB_clone/                   # Root directory of the project
     │   ├── test_amenity.py     # Task 2: Unit tests for Amenity
     │   ├── test_place.py       # Task 2: Unit tests for Place
     │   └── test_review.py      # Task 2: Unit tests for Review
-    ├── test_engine/            # Tests for storage engine
-    │   ├── __init__.py         # Task 2: Initializes test_engine package
-    │   └── test_file_storage.py# Task 2: Unit tests for FileStorage
-    └── test_console.py         # Advanced Task 17: Unit tests for console.py
-                                # Covers all basic and advanced console commands
-
+    └── test_engine/            # Tests for storage engine
+        ├── __init__.py         # Task 2: Initializes test_engine package
+        └── test_file_storage.py# Task 2: Unit tests for FileStorage class (including advanced persistence features)
 ```
